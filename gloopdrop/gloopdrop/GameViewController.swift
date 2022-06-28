@@ -17,7 +17,7 @@ class GameViewController: UIViewController {
         // create the view
         if let view = self.view as! SKView? {
         // create the scene
-            let scene = GameScene(size: view.bounds.size)
+            let scene = GameScene(size: CGSize(width: 1336, height: 1024))
         // set the scale mode to scale fill the view window
             scene.scaleMode = .aspectFill
         // set the background color
