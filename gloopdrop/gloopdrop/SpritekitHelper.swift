@@ -8,6 +8,15 @@
 import Foundation
 import SpriteKit
 
+// MARK: SPRITEKIT HELPERS
+
+// set up shared z-positions
+enum Layer: CGFloat {
+    case background
+    case forground
+    case player 
+}
+
 // MARK: - SPRITEKIT EXTENSIONS
 
 extension SKSpriteNode {

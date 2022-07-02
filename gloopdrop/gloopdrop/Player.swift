@@ -28,8 +28,9 @@ class Player: SKSpriteNode {
     self.name = "player"
     self.setScale(1.0)
     self.anchorPoint = CGPoint(x: 0.5, y: 0.0) //center bottom
+        self.zPosition = Layer.background.rawValue
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
