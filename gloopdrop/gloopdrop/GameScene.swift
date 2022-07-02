@@ -21,6 +21,10 @@ class GameScene: SKScene {
         foreground.anchorPoint = CGPoint(x: 0, y: 0 )
         foreground.position = CGPoint.zero
         addChild(foreground)
+    //set up player
+        let player = Player()
+        player.position = CGPoint(x: size.width/2, y: foreground.frame.maxY )
+        addChild(player)
     }
    
     }

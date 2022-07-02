@@ -19,7 +19,7 @@ class Player: SKSpriteNode {
     
     // MARK: - INIT
     init(){
-    let texture = SKTexture(imageNamed: "bob-walk_0")
+    let texture = SKTexture(imageNamed: "blob-walk_0")
     // call to super.init
     super.init(texture: texture, color: .clear, size:texture.size())
     // set up animation textures
