@@ -13,6 +13,8 @@
 		192ECE1E28685CB900AA2634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192ECE1C28685CB900AA2634 /* Main.storyboard */; };
 		192ECE2028685CBE00AA2634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192ECE1F28685CBE00AA2634 /* Assets.xcassets */; };
 		192ECE2328685CBE00AA2634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192ECE2128685CBE00AA2634 /* LaunchScreen.storyboard */; };
+		19FEBB122870176500FC36EC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEBB112870176500FC36EC /* Player.swift */; };
+		19FEBB1428701A3A00FC36EC /* SpritekitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEBB1328701A3A00FC36EC /* SpritekitHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		192ECE1D28685CB900AA2634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		192ECE1F28685CBE00AA2634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		192ECE2228685CBE00AA2634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19FEBB112870176500FC36EC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		19FEBB1328701A3A00FC36EC /* SpritekitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritekitHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 		192ECE1128685CB900AA2634 /* gloopdrop */ = {
 			isa = PBXGroup;
 			children = (
+				19FEBB1328701A3A00FC36EC /* SpritekitHelper.swift */,
+				19FEBB112870176500FC36EC /* Player.swift */,
 				192ECE1228685CB900AA2634 /* AppDelegate.swift */,
 				192ECE1828685CB900AA2634 /* GameScene.swift */,
 				192ECE1A28685CB900AA2634 /* GameViewController.swift */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19FEBB122870176500FC36EC /* Player.swift in Sources */,
 				192ECE1928685CB900AA2634 /* GameScene.swift in Sources */,
+				19FEBB1428701A3A00FC36EC /* SpritekitHelper.swift in Sources */,
 				192ECE1B28685CB900AA2634 /* GameViewController.swift in Sources */,
 				192ECE1328685CB900AA2634 /* AppDelegate.swift in Sources */,
 			);
