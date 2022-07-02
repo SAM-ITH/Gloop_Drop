@@ -28,11 +28,21 @@ class Player: SKSpriteNode {
     self.name = "player"
     self.setScale(1.0)
     self.anchorPoint = CGPoint(x: 0.5, y: 0.0) //center bottom
-        self.zPosition = Layer.background.rawValue
+    self.zPosition = Layer.background.rawValue
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - METHODS
+    func walk(){
+        // Check for textures
+        guard let walkTextures = walkTextures else {
+            preconditionFailure("Could not find textures!")
+        }
+        // Run animation (forever)
+        startAnimation(textures: walkTextures, speed: 0.25, name: PlayerAnimationtype.walk.rawValue, count: 0, resize: true, restore: true)
     }
     
     

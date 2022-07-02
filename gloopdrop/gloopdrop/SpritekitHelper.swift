@@ -29,9 +29,10 @@ extension SKSpriteNode {
             let temp = textureAtlas.textureNamed(textureName)
             textureArray.append(temp)
         }
-        
+        return textureArray
+    }
     //Satrt the animation using a name and a count (0 = repeat forever)
-        func startAnimation(textures: [SKTexture], speed: Double, name: String, count: Int, resize: Bool, restore: Bool){
+    func startAnimation(textures: [SKTexture], speed: Double, name: String, count: Int, resize: Bool, restore: Bool){
             // run the animation only if animation key doesn't already exist
             if (action(forKey: name) == nil){
                 let animation = SKAction.animate(with: textures, timePerFrame: speed, resize: resize, restore: restore)
@@ -47,8 +48,4 @@ extension SKSpriteNode {
                 }
             }
         }
-        
-        return textureArray
-    }
- 
 }

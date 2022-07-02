@@ -27,7 +27,9 @@ class GameScene: SKScene {
         let player = Player()
         player.position = CGPoint(x: size.width/2, y: foreground.frame.maxY )
         addChild(player)
+        player.walk()
+        
     }
-   
+        
     }
 
